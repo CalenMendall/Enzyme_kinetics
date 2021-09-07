@@ -46,12 +46,14 @@ boxplotcolors <- c('blue','red','green')
 boxplot(I.U..gfw ~ Temp, TissuePAM,
         col= boxplotcolors,
         xlab = "Temperature (°C)",
-        main = "PAM activity at varying temperatures")
+        main = "PAM activity across temperatures",
+        ylim = c(0,35))
 
 boxplot(I.U..gfw ~ Temp, Tissuetail, 
         col= boxplotcolors,
         xlab = "Temperature (°C)",
-        main = "Tail activity at varying temperatures" )
+        main = "Tail activity across temperatures",
+        ylim = c(0,35))
 
 #Statistics of activity
 summary(TissuePAM)
@@ -60,4 +62,4 @@ summary(Tissuetail)
 summary(aov(I.U..gfw ~Temp, TissuePAM))
 summary(aov(I.U..gfw ~Temp, Tissuetail))
 summary(aov(I.U..gfw ~Tissue.Type, EnzymeKinetics))
-
+summary(aov(I.U..gfw ~Temp, EnzymeKinetics))
