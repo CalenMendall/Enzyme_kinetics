@@ -1,6 +1,8 @@
 # Enzyme kinetics
 ## Project Summary
+
 Lab project examining the function of alanopine dehydrogenase (ADH) in clam posterior adductor muscle and in crawfish tail muscle at 3 physiologically relevant temperatures: 15°C, 25°C, and 35°C.
+## Process ##
 Raw data was adjusted to include numeric temperaures and then subsets of the data by tissue type were generated.
 
 Histograms of the data were generated to view distribution of enzyme activity between tissues.
